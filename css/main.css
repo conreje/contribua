@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav .brand-logo {
+    padding-left: 15px;
+}
+
+@media only screen and (max-width : 992px) {
+    nav .brand-logo {
+        padding-left: 0px;
+    }
+}
+
+header .logo {
+    margin-top: 35px;
+}
+
+.page-bg {
+    position: absolute;
+    top: 0px;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h6.bank {
+    font-weight: bold;
+}
+
+dl.bank {
+    margin: 0;
+    margin-top: 0.2rem;
+}
+
+dl.bank dd {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+dl.bank dd:after {
+    display: block;
+    content: '';
+}
+
+dl.bank dt {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 70px;
+}
+
+dl.bank dt:after {
+    content: ':';
+}
