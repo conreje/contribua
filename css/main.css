@@ -22,13 +22,13 @@ nav .brand-logo {
 }
 
 header .logo {
-    margin-top: 35px;
+    margin-top: 50px;
 }
 
 .page-bg {
     position: absolute;
     top: 0px;
-    height: 65%;
+    height: 70%;
     width: 100%;
     z-index: -1;
     background-image: url("../images/bg.jpg");
