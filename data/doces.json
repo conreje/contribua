@@ -1,14 +1,13 @@
-// JSON Document
 [
-  {"nome": "Achocolatado", "medida": "kg", "quantidade": 42},
-  {"nome": "Café em pó", "medida": "kg", "quantidade": 12},
-  {"nome": "Castanha", "medida": "kg", "quantidade": 5},
-  {"nome": "Chá (variados)", "medida": "kg", "quantidade": 8},
-  {"nome": "Gelatina em pó (varios sabores)", "medida": "kg", "quantidade": 15},
-  {"nome": "Geleia morango", "medida": "kg", "quantidade": 10},
-  {"nome": "Manteiga", "medida": "kg", "quantidade": 10},
-  {"nome": "Margarina ", "medida": "kg", "quantidade": 20},
-  {"nome": "Pudim de chocolate em pó", "medida": "kg", "quantidade": 3},
-  {"nome": "Requeijão", "medida": "kg", "quantidade": 20},
-  {"nome": "Sucrilhos", "medida": "kg", "quantidade": 50}
+    {"nome": "Achocolatado", "medida": "kg", "quantidade": 42},
+    {"nome": "Café em pó", "medida": "kg", "quantidade": 12},
+    {"nome": "Castanha", "medida": "kg", "quantidade": 5},
+    {"nome": "Chá (variados)", "medida": "kg", "quantidade": 8},
+    {"nome": "Gelatina em pó (varios sabores)", "medida": "kg", "quantidade": 15},
+    {"nome": "Geleia morango", "medida": "kg", "quantidade": 10},
+    {"nome": "Manteiga", "medida": "kg", "quantidade": 10},
+    {"nome": "Margarina ", "medida": "kg", "quantidade": 20},
+    {"nome": "Pudim de chocolate em pó", "medida": "kg", "quantidade": 3},
+    {"nome": "Requeijão", "medida": "kg", "quantidade": 20},
+    {"nome": "Sucrilhos", "medida": "kg", "quantidade": 50}
 ]

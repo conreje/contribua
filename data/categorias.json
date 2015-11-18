@@ -1,4 +1,3 @@
-// JSON Document
 [
     {"nome": "Hortifruti", "icone": "shopping_cart", "produtos": "data/hortifrutis.json"},
     {"nome": "Temperos", "icone": "shopping_cart", "produtos": "data/temperos.json"},
