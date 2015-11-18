@@ -1,8 +1,9 @@
+// JSON Document
 [
   {"nome": "Iogurte", "medida": "litros", "quantidade": 70},
   {"nome": "Leite integral", "medida": "litros", "quantidade": 240},
   {"nome": "Leite sem lactose", "medida": "litros", "quantidade": 15},
-  {"nome": "Ovos", "medida": "dúzias", "quantidade": 35},
+  {"nome": "Ovos", "medida": "dÃºzias", "quantidade": 35},
   {"nome": "Peito de frango", "medida": "kg", "quantidade": 100},
   {"nome": "Peito de peru", "medida": "kg", "quantidade": 20},
   {"nome": "Peixe (abrotea, pescado, espada) file", "medida": "kg", "quantidade": 25},

@@ -1,3 +1,4 @@
+// JSON Document
 [
   {"nome": "Alecrim", "medida": "pcts", "quantidade": 5},
   {"nome": "Caldo de galinha", "medida": "cx", "quantidade": 6},
@@ -8,7 +9,7 @@
   {"nome": "Louro", "medida": "pcts", "quantidade": 3},
   {"nome": "Molho ingles", "medida": "litros", "quantidade": 2},
   {"nome": "Mostarda", "medida": "kg", "quantidade": 5},
-  {"nome": "Orégano", "medida": "kg", "quantidade": 2},
+  {"nome": "OrÃ©gano", "medida": "kg", "quantidade": 2},
   {"nome": "Sal", "medida": "kg", "quantidade": 5},
   {"nome": "Tomilho", "medida": "pcts", "quantidade": 5}
 ]
