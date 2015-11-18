@@ -1,10 +1,11 @@
+// JSON Document
 [
     {"nome": "Hortifruti", "icone": "shopping_cart", "produtos": "data/hortifrutis.json"},
     {"nome": "Temperos", "icone": "shopping_cart", "produtos": "data/temperos.json"},
     {"nome": "Enlatados", "icone": "shopping_cart", "produtos": "data/enlatados.json"},
-    {"nome": "Farinhas e Gr„os", "icone": "shopping_cart", "produtos": "data/farinhas.json"},
+    {"nome": "Farinhas e Gr√£os", "icone": "shopping_cart", "produtos": "data/farinhas.json"},
     {"nome": "Leite, ovos, queijos e carnes", "icone": "shopping_cart", "produtos": "data/leite.json"},
-    {"nome": "Doces, margarinas, cafÈ e ch·", "icone": "shopping_cart", "produtos": "data/doces.json"},
+    {"nome": "Doces, margarinas, caf√© e ch√°", "icone": "shopping_cart", "produtos": "data/doces.json"},
     {"nome": "Outros", "icone": "shopping_cart", "produtos": "data/outros.json"},
     {"nome": "Higiene e limpeza", "icone": "shopping_cart", "produtos": "data/higiene.json"}
 ]

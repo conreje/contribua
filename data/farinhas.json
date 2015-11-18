@@ -1,5 +1,6 @@
+// JSON Document
 [
-  {"nome": "AÁ˙car", "medida": "kg", "quantidade": 50},
+  {"nome": "A√ß√∫car", "medida": "kg", "quantidade": 50},
   {"nome": "Amido de milho (maisena)", "medida": "kg", "quantidade": 8},
   {"nome": "Arroz integral", "medida": "kg", "quantidade": 40},
   {"nome": "Arroz parboilizado", "medida": "kg", "quantidade": 50},
@@ -16,13 +17,13 @@
   {"nome": "Farinha de rosca", "medida": "kg", "quantidade": 15},
   {"nome": "Farinha de trigo", "medida": "kg", "quantidade": 65},
   {"nome": "Farinha de trigo integral", "medida": "kg", "quantidade": 45},
-  {"nome": "Feij„o", "medida": "kg", "quantidade": 15},
+  {"nome": "Feij√£o", "medida": "kg", "quantidade": 15},
   {"nome": "Fermento", "medida": "latas", "quantidade": 3},
   {"nome": "Granola", "medida": "kg", "quantidade": 4},
-  {"nome": "Gr„o de bico", "medida": "kg", "quantidade": 10},
-  {"nome": "Macarr„o espaguetti", "medida": "kg", "quantidade": 40},
-  {"nome": "Macarr„o penne", "medida": "kg", "quantidade": 10},
-  {"nome": "Macarr„o sem gluten", "medida": "kg", "quantidade": 4},
+  {"nome": "Gr√£o de bico", "medida": "kg", "quantidade": 10},
+  {"nome": "Macarr√£o espaguetti", "medida": "kg", "quantidade": 40},
+  {"nome": "Macarr√£o penne", "medida": "kg", "quantidade": 10},
+  {"nome": "Macarr√£o sem gluten", "medida": "kg", "quantidade": 4},
   {"nome": "Milho pipoca", "medida": "kg", "quantidade": 10},
   {"nome": "Proteina texturizada de soja", "medida": "kg", "quantidade": 40}
 ]

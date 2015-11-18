@@ -1,13 +1,14 @@
+// JSON Document
 [
   {"nome": "Achocolatado", "medida": "kg", "quantidade": 42},
-  {"nome": "CafÈ em pÛ", "medida": "kg", "quantidade": 12},
+  {"nome": "Caf√© em p√≥", "medida": "kg", "quantidade": 12},
   {"nome": "Castanha", "medida": "kg", "quantidade": 5},
-  {"nome": "Ch· (variados)", "medida": "kg", "quantidade": 8},
-  {"nome": "Gelatina em pÛ (varios sabores)", "medida": "kg", "quantidade": 15},
+  {"nome": "Ch√° (variados)", "medida": "kg", "quantidade": 8},
+  {"nome": "Gelatina em p√≥ (varios sabores)", "medida": "kg", "quantidade": 15},
   {"nome": "Geleia morango", "medida": "kg", "quantidade": 10},
   {"nome": "Manteiga", "medida": "kg", "quantidade": 10},
   {"nome": "Margarina ", "medida": "kg", "quantidade": 20},
-  {"nome": "Pudim de chocolate em pÛ", "medida": "kg", "quantidade": 3},
-  {"nome": "Requeij„o", "medida": "kg", "quantidade": 20},
+  {"nome": "Pudim de chocolate em p√≥", "medida": "kg", "quantidade": 3},
+  {"nome": "Requeij√£o", "medida": "kg", "quantidade": 20},
   {"nome": "Sucrilhos", "medida": "kg", "quantidade": 50}
 ]
