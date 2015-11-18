@@ -1,0 +1,11 @@
+{
+  "name": "conreje/contribua",
+  "version": "1.0.0",
+  "dependencies": {
+    "backbone": "~1.2.*",
+    "jquery": "~2.*.*",
+    "marionette": "~2.4.*",
+    "underscore": "~1.8.*",
+    "Materialize": "materialize#~0.97.3"
+  }
+}
