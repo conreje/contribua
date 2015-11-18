@@ -19,6 +19,10 @@ nav .brand-logo {
     nav .brand-logo {
         padding-left: 0px;
     }
+    
+    .produtos input[type="checkbox"]+label {
+        font-size: 0.7rem;
+    }
 }
 
 header .logo {
@@ -64,4 +68,13 @@ dl.bank dt {
 
 dl.bank dt:after {
     content: ':';
+}
+
+.produtos .row {
+    padding: 15px 15px 0px;
+}
+
+.produtos input[type="number"] {
+    font-size: 0.8rem;
+    height: 1.8rem;
 }
