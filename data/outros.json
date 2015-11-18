@@ -1,0 +1,8 @@
+[
+  {"nome": "Azeite de oliva", "medida": "litros", "quantidade": 5},
+  {"nome": "Óleo de gergelin", "medida": "litro", "quantidade": 1},
+  {"nome": "Óleo de soja", "medida": "litros", "quantidade": 15},
+  {"nome": "Pão de trigo", "medida": "unidades", "quantidade": 1500},
+  {"nome": "Pão integral de fatias", "medida": "pcts", "quantidade": 60},
+  {"nome": "Vinagre de álcool", "medida": "litro", "quantidade": 1}
+]

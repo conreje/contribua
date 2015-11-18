@@ -1,0 +1,12 @@
+[
+  {"nome": "Atum", "medida": "latas", "quantidade": 70},
+  {"nome": "Azeitona", "medida": "kg", "quantidade": 3},
+  {"nome": "Champignon", "medida": "kg", "quantidade": 5},
+  {"nome": "Creme de leite", "medida": "kg", "quantidade": 40},
+  {"nome": "Creme de leite sem lactose", "medida": "kg", "quantidade": 30},
+  {"nome": "Ervilha", "medida": "latas grande", "quantidade": 3},
+  {"nome": "Extrato de tomate", "medida": "kg", "quantidade": 36},
+  {"nome": "Milho", "medida": "latas grande", "quantidade": 3},
+  {"nome": "Palmito", "medida": "kg", "quantidade": 3},
+  {"nome": "Sardinha", "medida": "latas", "quantidade": 60}
+]

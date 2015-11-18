@@ -1,0 +1,13 @@
+[
+  {"nome": "Iogurte", "medida": "litros", "quantidade": 70},
+  {"nome": "Leite integral", "medida": "litros", "quantidade": 240},
+  {"nome": "Leite sem lactose", "medida": "litros", "quantidade": 15},
+  {"nome": "Ovos", "medida": "dúzias", "quantidade": 35},
+  {"nome": "Peito de frango", "medida": "kg", "quantidade": 100},
+  {"nome": "Peito de peru", "medida": "kg", "quantidade": 20},
+  {"nome": "Peixe (abrotea, pescado, espada) file", "medida": "kg", "quantidade": 25},
+  {"nome": "Peixe inteiro (no dia)", "medida": "kg", "quantidade": 25},
+  {"nome": "Queijo mussarela", "medida": "kg", "quantidade": 30},
+  {"nome": "Queijo mussarela sem lactose", "medida": "kg", "quantidade": 3},
+  {"nome": "Queijo ralado", "medida": "kg", "quantidade": 10}
+]
