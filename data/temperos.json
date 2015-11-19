@@ -1,6 +1,6 @@
 [
     {"nome": "Alecrim", "medida": "pcts", "quantidade": 5},
-	{"nome": "Caldo de galinha", "medida": "cx", "quantidade": 6},
+    {"nome": "Caldo de galinha", "medida": "cx", "quantidade": 6},
     {"nome": "Canela", "medida": "pcts", "quantidade": 5},
     {"nome": "Catchup", "medida": "kg", "quantidade": 5},
     {"nome": "Coentro", "medida": "pcts", "quantidade": 3},
