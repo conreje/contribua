@@ -1,13 +1,18 @@
 {
     "name": "conreje/contribua",
     "description": "Site com informações sobre como contribuir com a CONREJE",
-    "require": {
-        "swiftmailer/swiftmailer": "^5.4"
-    },
     "authors": [
         {
             "name": "Luís Otávio Cobucci Oblonczyk",
             "email": "lcobucci@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    },
+    "autoload": {
+       "psr-4": {
+           "Conreje\\Contribua\\": "src"
+       }
+    }
 }

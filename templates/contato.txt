@@ -1,0 +1,7 @@
+Uma mensagem vinda do site!
+
+Algum vistante mandou essa mensagem pelo site.
+Nome: <name>
+Email: <email>
+Telefone:  <phone>
+Mensagem: <message>
