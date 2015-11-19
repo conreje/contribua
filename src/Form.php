@@ -41,7 +41,7 @@ abstract class Form
      */
     public function process(array $data)
     {
-        $data = $this->filter($data);
+        $data = $this->filter($this->decode($data));
 
         if (!$this->isValid($data)) {
             return ServerResponse::json(['error' => 'Você preencher os dados corretamente!'], 400);
@@ -57,6 +57,20 @@ abstract class Form
         $data['id'] = uniqid();
 
         return ServerResponse::json($data);
+    }
+
+    /**
+     * @param array $data
+     *
+     * @return array
+     */
+    private function decode(array $data)
+    {
+        if (!empty($data)) {
+            return $data;
+        }
+
+        return json_decode(file_get_contents('php://input'), true);
     }
 
     /**
