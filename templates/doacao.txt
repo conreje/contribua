@@ -1,0 +1,8 @@
+Nova doação recebida!
+
+Algum vistante mandou esta solicitação de doação:
+Nome: <name>
+Email: <email>
+Telefone:  <phone>
+
+<products>

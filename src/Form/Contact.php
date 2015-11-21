@@ -1,7 +1,9 @@
 <?php
-namespace Conreje\Contribua;
+namespace Conreje\Contribua\Form;
 
-final class ContactForm extends Form
+use Conreje\Contribua\Form;
+
+final class Contact extends Form
 {
     /**
      * @param array $data
@@ -49,6 +51,6 @@ final class ContactForm extends Form
      */
     protected function getTemplate()
     {
-        return file_get_contents(__DIR__ . '/../templates/contato.txt');
+        return file_get_contents(__DIR__ . '/../../templates/contato.txt');
     }
 }
