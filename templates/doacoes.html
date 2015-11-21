@@ -1,5 +1,19 @@
 <div class="row">
     <div class="col s12">
+        <div id="loader" class="preloader-wrapper small right">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <h6 id="error" class="red-text right hide"></h6>
         <h3 class="flow-text">
             <a id="back" href="#" class="black-text"><i class="material-icons left">arrow_back</i>Voltar</a>
         </h3>
@@ -13,18 +27,18 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="name" type="text" required="required" class="validate">
+                <input id="name" type="text" required="required" class="validate details">
                 <label for="name">Nome</label>
             </div>
             <div class="input-field col s12 m6">
                 <i class="material-icons prefix">email</i>
-                <input id="email" type="email" required="required"  class="validate">
+                <input id="email" type="email" required="required"  class="validate details">
                 <label for="email">Email</label>
             </div>
             <div class="input-field col s12 m6">
                 <i class="material-icons prefix">phone</i>
                 <label for="phone">Telefone</label>
-                <input id="phone" type="tel" required="required"  class="validate">
+                <input id="phone" type="tel" required="required"  class="validate details">
             </div>
         </div>
         <div class="row">

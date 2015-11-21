@@ -1,13 +1,23 @@
-(function(app, Backbone, $, _) {
+(function(app, Backbone, $, _, Materialize) {
     var Donation = Backbone.Model.extend({
-        defaults: {
-            name: '',
-            email: '',
-            phone: '',
-            products: []
+        hasProducts: function() {
+            return this.get('products').length > 0
+        },
+        
+        removeProduct: function(product, category) {
+            this.set('products', _.reject(this.get('products'), function(item) {
+                return item.name === product.get('nome') && item.category === category.get('nome');
+            }));
         },
 
-        add: function(product, category, quantity) {
+        updateProduct: function(product, category, quantity) {
+            var item = _.findWhere(this.get('products'), {name: product.get('nome'), category: category.get('nome')});
+            
+            if (item) {
+                item.quantity = quantity;
+                return;
+            }
+            
             this.get('products').push({
                 name: product.get('nome'),
                 category: category.get('nome'),
@@ -21,12 +31,7 @@
 
     var Product = Backbone.Model.extend({
         initialize: function() {
-            this.listenTo(this, 'change:nome', this.configureSlug);
-            this.configureSlug();
-        },
-        
-        configureSlug: function() {
-            this.set('slug', $.slugify(this.get('nome')));
+            this.set('slug', $.slugify(this.get('nome') + ' ' + this.get('quantidade')));
         }
     });
 
@@ -70,7 +75,8 @@
             },
             
             events: {
-                'change @ui.select': 'toogleQuantity'
+                'change @ui.select': 'toogleQuantity',
+                'change @ui.quantity': 'update'
             },
             
             toogleQuantity: function() {
@@ -81,6 +87,11 @@
                 }
                 
                 this.ui.quantity.prop('disabled', true).val('');
+                this.update();
+            },
+            
+            update: function () {
+                this.triggerMethod('update', this.model, this.ui.quantity.val());
             }
         });
         
@@ -101,8 +112,20 @@
                 var products = this.model.getProducts();
 
                 products.fetch().then((function() {
-                    this.showChildView('products', new ProductsView({collection: products}));
+                    this.showChildView(
+                        'products',
+                        new ProductsView({collection: products})
+                    );
                 }).bind(this));
+            },
+            
+            onChildviewUpdate: function(view, product, quantity) {
+                if (quantity === 0 || quantity === '') {
+                    this.triggerMethod('product:remove', product, this.model);
+                    return;
+                }
+                
+                this.triggerMethod('product:update', product, this.model, quantity);
             }
         });
 
@@ -120,19 +143,34 @@
             }
         });
 
-        var Donnations = Backbone.Marionette.LayoutView.extend({
+        var Donations = Backbone.Marionette.LayoutView.extend({
             template: _.template(template[0]),
-
+            
             regions: {
                 categories: '#categories'
             },
             
             ui: {
-                back: '#back'
+                back: '#back',
+                form: 'form',
+                fields: 'input.details',
+                loader: '#loader',
+                error: '#error'
             },
 
             events: {
-                'click @ui.back': 'back'
+                'click @ui.back': 'back',
+                'submit @ui.form': 'send',
+                'change @ui.fields': 'fill'
+            },
+            
+            initialize: function() {
+                this.model = new Donation({name: '', email: '', phone: '', products: []});
+            },
+            
+            fill: function(e) {
+                var elem = e.target;
+                this.model.set(elem.id, elem.value, {silent: true});
             },
 
             back: function(e) {
@@ -140,13 +178,51 @@
 
                 this.triggerMethod('open', 'home')
             },
+            
+            send: function(e) {
+                e.preventDefault();
+                
+                $(document).scrollTop(0);
+                this.showLoading();
+                
+                if (!this.model.hasProducts()) {
+                    return this.showError('Você deve contribuir com ao menos um item');
+                }
+                
+                this.model.save()
+                    .done((function() {
+                        this.triggerMethod('open', 'home');
+                        Materialize.toast('Doação enviada, em breve entraremos em contato!', 3000);
+                    }).bind(this))
+                    .fail((function(xhr) {
+                        this.showError(xhr.responseJSON.error);
+                    }).bind(this));
+            },
 
             onBeforeShow: function() {
                 this.showChildView('categories', new CategoriesView({collection: categories}));
+            },
+            
+            showLoading: function() {
+                this.ui.loader.addClass('active');
+                this.ui.error.html('').addClass('hide');
+            },
+            
+            showError: function(message) {
+                this.ui.loader.removeClass('active');
+                this.ui.error.html(message).removeClass('hide');
+            },
+            
+            onChildviewProductRemove: function(view, product, category) {
+                this.model.removeProduct(product, category);
+            },
+            
+            onChildviewProductUpdate: function(view, product, category, quantity) {
+                this.model.updateProduct(product, category, quantity);
             }
         });
         
-        app.layout.registeredViews.donnations = Donnations;
+        app.layout.registeredViews.donnations = Donations;
         categories.fetch();
     }
 
@@ -157,4 +233,4 @@
             $.get('templates/produto.html')
         ).done(register);
     });
-})(Conreje.Contribua, Backbone, jQuery, _);
+})(Conreje.Contribua, Backbone, jQuery, _, Materialize);
