@@ -77,4 +77,5 @@ dl.bank dt:after {
 .produtos input[type="number"] {
     font-size: 0.8rem;
     height: 1.8rem;
+    width: 3rem;
 }

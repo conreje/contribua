@@ -62,7 +62,26 @@
         
         var ProductView = Backbone.Marionette.ItemView.extend({
             className: 'col s12 m6',
-            template: _.template(productTemplate[0])
+            template: _.template(productTemplate[0]),
+            
+            ui: {
+                select: 'input[type="checkbox"]',
+                quantity: 'input[type="number"]'
+            },
+            
+            events: {
+                'change @ui.select': 'toogleQuantity'
+            },
+            
+            toogleQuantity: function() {
+                if (this.ui.select.is(':checked')) {
+                    this.ui.quantity.prop('disabled', false).focus();
+                    
+                    return;
+                }
+                
+                this.ui.quantity.prop('disabled', true).val('');
+            }
         });
         
         var ProductsView = Backbone.Marionette.CollectionView.extend({
