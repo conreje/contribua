@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-use Conreje\Contribua\Form\Contact;
+use Conreje\Contribua\Form\Donation;
 
-$form = Contact::defaultForm();
+$form = Donation::defaultForm();
 $form->process($_POST)->send();

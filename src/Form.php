@@ -47,7 +47,7 @@ abstract class Form
             return ServerResponse::json(['error' => 'Você preencher os dados corretamente!'], 400);
         }
 
-        if (!$this->send($data)) {
+        if (!$this->send($this->manipulate($data))) {
             return ServerResponse::json(
                 ['error' => 'Não foi possível enviar sua mensagem, tente novamente.'],
                 400
@@ -110,6 +110,17 @@ abstract class Form
             $this->getTemplate()
         );
     }
+
+    /**
+     * @param array $data
+     *
+     * @return array
+     */
+    protected function manipulate(array $data)
+    {
+        return $data;
+    }
+
     /**
      * @param array $data
      *

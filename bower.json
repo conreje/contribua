@@ -6,6 +6,7 @@
     "jquery": "~2.*.*",
     "marionette": "~2.4.*",
     "underscore": "~1.8.*",
-    "Materialize": "materialize#~0.97.3"
+    "Materialize": "materialize#~0.97.3",
+    "jquery-slugify": "~1.2.2"
   }
 }
